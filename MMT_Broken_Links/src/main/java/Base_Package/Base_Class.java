@@ -24,7 +24,7 @@ public class Base_Class {
 		        if (Browser.equalsIgnoreCase("Chrome")) {
 			       ChromeOptions options = new ChromeOptions();
 			       options.addArguments("--remote-allow-origins=*");
-			       System.out.println();
+			      
                      
 			
 			
