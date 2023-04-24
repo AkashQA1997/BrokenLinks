@@ -24,10 +24,6 @@ public class Base_Class {
 		        if (Browser.equalsIgnoreCase("Chrome")) {
 			       ChromeOptions options = new ChromeOptions();
 			       options.addArguments("--remote-allow-origins=*");
-			      
-                     
-			
-			
 			        WebDriverManager.chromedriver().setup();
 			        driver = new ChromeDriver(options);
 			        driver.manage().window().maximize();
