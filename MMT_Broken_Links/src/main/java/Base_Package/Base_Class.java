@@ -1,5 +1,7 @@
 package Base_Package;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -22,37 +24,40 @@ public class Base_Class {
 
 		
 		        if (Browser.equalsIgnoreCase("Chrome")) {
-			       ChromeOptions options = new ChromeOptions();
-			       options.addArguments("--remote-allow-origins=*");
+
 			        WebDriverManager.chromedriver().setup();
-			        driver = new ChromeDriver(options);
+			        driver = new ChromeDriver();
 			        driver.manage().window().maximize();
 			        driver.manage().deleteAllCookies();
 			        driver.get(links);
-			        Thread.sleep(3000);
+			        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+			        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			        Thread.sleep(1000);
 		}else
 			    if (Browser.equalsIgnoreCase("Edge")) {
-			    	EdgeOptions options = new EdgeOptions();
-				    options.addArguments("--remote-allow-origins=*");
+	
 				    WebDriverManager.edgedriver().setup();
-				    driver = new EdgeDriver(options);
+				    driver = new EdgeDriver();
 				    driver.manage().window().maximize();
 				    driver.manage().deleteAllCookies();
 				    driver.get(links);
-				    Thread.sleep(3000);
+			        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+			        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+				    Thread.sleep(1000);
 				
 		}else
 				if (Browser.equalsIgnoreCase("Firefox")) {
 					
 					
-					FirefoxOptions options = new FirefoxOptions();
-				    options.addArguments("--remote-allow-origins=*");
+			
 					WebDriverManager.firefoxdriver().setup();
-					driver = new FirefoxDriver(options);
+					driver = new FirefoxDriver();
 					driver.manage().window().maximize();
 					driver.manage().deleteAllCookies();
 					driver.get(links);
-					Thread.sleep(3000);
+			        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+			        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+					Thread.sleep(1000);
 		}
 		
 		

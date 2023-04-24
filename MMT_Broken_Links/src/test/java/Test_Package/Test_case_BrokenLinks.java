@@ -14,7 +14,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Base_Package.Base_Class;
-import Broken_Links.Check_Link;
+
 import Excel_Data.Excel_data;
 
 public class Test_case_BrokenLinks extends Base_Class {
@@ -42,19 +42,20 @@ public class Test_case_BrokenLinks extends Base_Class {
 		List<WebElement> LinkList1  = driver.findElements(By.tagName("a"));
 		Thread.sleep(2000);
 		LinkList1.addAll(driver.findElements(By.tagName("img")));
+		System.out.println("Total Links are ------  " + LinkList1.size());
 		List<WebElement> Actual_Link = new ArrayList<WebElement>();
 	    for(int i = 0; i<LinkList1.size();i++) {
 			if(LinkList1.get(i).getAttribute("href") != null) {
 			Actual_Link.add(LinkList1.get(i));
 			
 			}
-			Thread.sleep(2000);
+			
 			
 			
 		}
 		
 		
-		System.out.println("Total Links are ------  " + LinkList1.size());
+		
 		System.out.println("Actual Links are ------  " + Actual_Link.size());
 		
 	}
@@ -65,16 +66,17 @@ public class Test_case_BrokenLinks extends Base_Class {
 	public void Test_Image_Number_check(String Page_Name, String Links, String Browser) throws Throwable {
 		Intialization(Browser, Links);
 		List<WebElement> LinkList2  = driver.findElements(By.tagName("img"));
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		System.out.println("Total Image Links are ------  " + LinkList2.size());
 		List<WebElement> Actual_ImgLink = new ArrayList<WebElement>();
 		for(int i = 0; i<LinkList2.size(); i++) {
 			if(LinkList2.get(i).getAttribute("img")!= null) {
 				Actual_ImgLink.add(LinkList2.get(i));
 				
 			}
-			Thread.sleep(2000);
+			
 		}
-		System.out.println("Total Image Links are ------  " + LinkList2.size());
+		
 		System.out.println("Actual Image Links are ------  " + Actual_ImgLink.size());
 }
 
@@ -82,18 +84,19 @@ public class Test_case_BrokenLinks extends Base_Class {
 
 public void Test_href_Number_check(String Page_Name, String Links, String Browser) throws Throwable {
 	   Intialization(Browser, Links);
-	   List<WebElement> LinkList3  = driver.findElements(By.tagName("href"));
-	   Thread.sleep(2000);
+	   List<WebElement> LinkList3  = driver.findElements(By.tagName("a"));
+	   Thread.sleep(1000);
+	   System.out.println("Total href Links are ------  " + LinkList3.size());
 	   List<WebElement> Actual_hrefLink = new ArrayList<WebElement>();
 	    for(int i = 0; i<LinkList3.size(); i++) {
 		   if(LinkList3.get(i).getAttribute("href")!= null) {
 			    Actual_hrefLink.add(LinkList3.get(i));
 			   
 		} 
-		   Thread.sleep(2000);
+		  
 	}
 	    
-		System.out.println("Total href Links are ------  " + LinkList3.size());
+		
 		System.out.println("Actual href Links are ------  " + Actual_hrefLink.size());
 }
 
@@ -105,12 +108,13 @@ public void Test_link_Responce_check(String Page_Name, String Links, String Brow
 	
 	List<WebElement> LinkList4  = driver.findElements(By.tagName("a"));
 	LinkList4.addAll(driver.findElements(By.tagName("img")));
+	Thread.sleep(1000);
 	List<WebElement> Actual_Link4 = new ArrayList<WebElement>();
     for(int i = 0; i<LinkList4.size();i++) {
 		if(LinkList4.get(i).getAttribute("href") != null) {
 		Actual_Link4.add(LinkList4.get(i));	
 		}	
-		Thread.sleep(2000);
+		
 		
 	}
     
@@ -122,15 +126,14 @@ public void Test_link_Responce_check(String Page_Name, String Links, String Brow
       {
     	 
     	 String Hreflink = Actual_Link4.get(j).getAttribute("href");
-    	 Thread.sleep(2000);
-    	 if(Hreflink.contains("https")) 
+    	 Thread.sleep(100);
+    	 if(Hreflink.contains("http")) 
     	 {
     		 
     		 URL httpurl = new URL(Hreflink);
-    		 HttpURLConnection http = (HttpURLConnection) httpurl.openConnection();
-    		 Thread.sleep(2000);
+    		 HttpURLConnection http = (HttpURLConnection) httpurl.openConnection();		 
     		 http.connect();
-    		 Thread.sleep(2000);
+    		 Thread.sleep(100);
     		 String responce = http.getResponseMessage();
     		 System.out.println("Link Responce ------>  " + Hreflink + "--->  " + responce );
     		 System.out.println();
@@ -138,7 +141,7 @@ public void Test_link_Responce_check(String Page_Name, String Links, String Brow
     	  }
     	 
         }
-     Thread.sleep(2000);
+     
 	
       }
     System.out.println();
