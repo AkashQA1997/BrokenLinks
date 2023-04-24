@@ -148,7 +148,6 @@ public void Test_link_Responce_check(String Page_Name, String Links, String Brow
     System.out.println();
     System.out.println("The total links Are present ------   " + LinkList4.size());
     System.out.println();
-    System.out.println();
     System.out.println("The total links to be checked ------ " + Actual_Link4.size());
     
 
