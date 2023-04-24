@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <parameter name="Browser" value="Chrome"></parameter>
+	  
+    <classes>
+      <class name="Test_Package.Test_case_BrokenLinks">
+		  
+		  <methods>
+			  
+			  <include name="Test_link_Number_check"></include>
+			  <include name="Test_Image_Number_check"></include>
+			  <include name="Test_href_Number_check"></include>
+			  <include name="Test_link_Responce_check"></include>
+		  </methods>
+		  
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
