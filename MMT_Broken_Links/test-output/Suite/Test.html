@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>46/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 25 00:26:16 IST 2023</td>
+<td>Started on:</td><td>Fri Apr 28 20:30:05 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>307 seconds (307236 ms)</td>
+<tr><td>Total time:</td><td>2005 seconds (2005409 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,164 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Edge</td>
+<td><div><pre>java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at Test_Package.Test_case_BrokenLinks.Test_link_Responce_check(Test_case_BrokenLinks.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1689070505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1689070505'><pre>java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at Test_Package.Test_case_BrokenLinks.Test_link_Responce_check(Test_case_BrokenLinks.java:143)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>54</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Chrome</td>
+<td><div><pre>java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at Test_Package.Test_case_BrokenLinks.Test_link_Responce_check(Test_case_BrokenLinks.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2073410992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2073410992'><pre>java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at Test_Package.Test_case_BrokenLinks.Test_link_Responce_check(Test_case_BrokenLinks.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>64</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,64 +234,234 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Edge</td>
 <td></td>
-<td>41</td>
+<td>37</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Chrome</td>
+<td></td>
+<td>40</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Chrome</td>
 <td></td>
 <td>36</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Contact_Page, https://magicminds.io/contact/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Edge</td>
+<td></td>
+<td>36</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Edge</td>
+<td></td>
+<td>37</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Edge</td>
+<td></td>
+<td>41</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Chrome</td>
+<td></td>
+<td>45</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Edge</td>
 <td></td>
 <td>33</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_href_Number_check()'><b>Test_href_Number_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct Image links Number<br>Parameters: Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Chrome</td>
 <td></td>
-<td>7</td>
+<td>74</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu-canada-et-revenu-quebec/, Chrome</td>
+<td></td>
+<td>35</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Chrome</td>
+<td></td>
+<td>78</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Chrome</td>
 <td></td>
 <td>34</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Home_Page, https://magicminds.io/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Chrome</td>
 <td></td>
-<td>79</td>
+<td>45</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_href_Number_check()'><b>Test_href_Number_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct Image links Number<br>Parameters: SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Edge</td>
 <td></td>
-<td>6</td>
+<td>40</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_href_Number_check()'><b>Test_href_Number_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct Image links Number<br>Parameters: Contact_Page, https://magicminds.io/contact/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Chrome</td>
 <td></td>
-<td>6</td>
+<td>36</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_href_Number_check()'><b>Test_href_Number_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct Image links Number<br>Parameters: Home_Page, https://magicminds.io/, Chrome</td>
-<td></td>
-<td>12</td>
-<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
-<tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_href_Number_check()'><b>Test_href_Number_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct Image links Number<br>Parameters: About_Page, https://magicminds.io/about-mmt/, Chrome</td>
-<td></td>
-<td>7</td>
-<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
-<tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: About_Page, https://magicminds.io/about-mmt/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/, Edge</td>
 <td></td>
 <td>32</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 <tr>
-<td title='Test_Package.Test_case_BrokenLinks.Test_href_Number_check()'><b>Test_href_Number_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct Image links Number<br>Parameters: StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome</td>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de-ventes/, Edge</td>
 <td></td>
-<td>7</td>
+<td>32</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu-canada-et-revenu-quebec/, Edge</td>
+<td></td>
+<td>33</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Chrome</td>
+<td></td>
+<td>44</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Chrome</td>
+<td></td>
+<td>38</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Chrome</td>
+<td></td>
+<td>39</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Edge</td>
+<td></td>
+<td>38</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Chrome</td>
+<td></td>
+<td>37</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Edge</td>
+<td></td>
+<td>75</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Chrome</td>
+<td></td>
+<td>39</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de-ventes/, Chrome</td>
+<td></td>
+<td>35</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Edge</td>
+<td></td>
+<td>37</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Chrome</td>
+<td></td>
+<td>40</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Edge</td>
+<td></td>
+<td>32</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, Chrome</td>
+<td></td>
+<td>34</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Edge</td>
+<td></td>
+<td>43</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Edge</td>
+<td></td>
+<td>76</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/, Chrome</td>
+<td></td>
+<td>33</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Chrome</td>
+<td></td>
+<td>39</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, Edge</td>
+<td></td>
+<td>33</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Edge</td>
+<td></td>
+<td>33</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Edge</td>
+<td></td>
+<td>36</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Chrome</td>
+<td></td>
+<td>41</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Chrome</td>
+<td></td>
+<td>39</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Chrome</td>
+<td></td>
+<td>36</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Edge</td>
+<td></td>
+<td>36</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Edge</td>
+<td></td>
+<td>33</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Edge</td>
+<td></td>
+<td>36</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Edge</td>
+<td></td>
+<td>37</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Chrome</td>
+<td></td>
+<td>33</td>
+<td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
+<tr>
+<td title='Test_Package.Test_case_BrokenLinks.Test_link_Responce_check()'><b>Test_link_Responce_check</b><br>Test class: Test_Package.Test_case_BrokenLinks<br>Test method: To test the correct links Number<br>Parameters: Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Edge</td>
+<td></td>
+<td>36</td>
 <td>Test_Package.Test_case_BrokenLinks@4b45a2f5</td></tr>
 </table><p>
 </body>

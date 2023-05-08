@@ -107,48 +107,60 @@ public void Test_link_Responce_check(String Page_Name, String Links, String Brow
 	//LinkClass.CheckNumber(Page_Name, Links);
 	
 	List<WebElement> LinkList4  = driver.findElements(By.tagName("a"));
-	LinkList4.addAll(driver.findElements(By.tagName("img")));
-	Thread.sleep(1000);
-	List<WebElement> Actual_Link4 = new ArrayList<WebElement>();
-    for(int i = 0; i<LinkList4.size();i++) {
-		if(LinkList4.get(i).getAttribute("href") != null) {
-		Actual_Link4.add(LinkList4.get(i));	
+	List<WebElement> LinkList5  = driver.findElements(By.tagName("img"));
+	
+	//LinkList4.addAll(driver.findElements(By.tagName("img")));
+	Thread.sleep(100);
+	List<WebElement> Actual_Link4 = new ArrayList<WebElement>(10000);
+	List<WebElement> Actual_Link5 = new ArrayList<WebElement>(10000);
+	Actual_Link4.addAll(LinkList4);
+	Actual_Link4.addAll(LinkList5);
+    for(int i = 0; i<Actual_Link4.size();i++) {
+		//String LINKS = Actual_Link4.get(i).getAttribute("href");
+		//System.out.println(LINKS);
+		if(Actual_Link4.get(i).getAttribute("href") != null) {
+		Actual_Link5.add(Actual_Link4.get(i));	
+
 		}	
 		
 		
 	}
     
-    for(int j = 0; j<Actual_Link4.size();j++) 
+    for(int j = 0; j<Actual_Link5.size();j++) 
     {
     	
     	
-     if(Actual_Link4.get(j).getAttribute("href")!= null) 
-      {
+    // if(Actual_Link5.get(j).getAttribute("href")!= null) 
+     // {
     	 
-    	 String Hreflink = Actual_Link4.get(j).getAttribute("href");
-    	 Thread.sleep(100);
+    	 String Hreflink = Actual_Link5.get(j).getAttribute("href");
+    	 Thread.sleep(15);
     	 if(Hreflink.contains("http")) 
     	 {
     		 
     		 URL httpurl = new URL(Hreflink);
     		 HttpURLConnection http = (HttpURLConnection) httpurl.openConnection();		 
     		 http.connect();
-    		 Thread.sleep(100);
+    		 Thread.sleep(10);
     		 String responce = http.getResponseMessage();
     		 System.out.println("Link Responce ------>  " + Hreflink + "--->  " + responce );
     		 System.out.println();
     		  
     	  }
     	 
-        }
+        //}
      
 	
       }
     System.out.println();
-    System.out.println();
     System.out.println("The total links Are present ------   " + LinkList4.size());
     System.out.println();
     System.out.println("The total links to be checked ------ " + Actual_Link4.size());
+    
+    
+    
+    
+    
     
 
 }

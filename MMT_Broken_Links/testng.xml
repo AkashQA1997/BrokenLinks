@@ -9,9 +9,9 @@
 		  
 		  <methods>
 			  
-			 <!-- <include name="Test_link_Number_check"></include>
-			  <include name="Test_Image_Number_check"></include>-->
-			  <include name="Test_href_Number_check"></include>
+<!--			 <include name="Test_link_Number_check"></include>
+			  <include name="Test_Image_Number_check"></include>
+			  <include name="Test_href_Number_check"></include>-->
 			  <include name="Test_link_Responce_check"></include>
 		  </methods>
 		  

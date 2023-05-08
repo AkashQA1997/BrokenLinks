@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="14" passed="12" failed="0" skipped="0">
+<testng-results ignored="3" total="51" passed="46" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-25T00:26:16 IST" name="Suite" finished-at="2023-04-25T00:31:23 IST" duration-ms="307236">
+  <suite started-at="2023-04-28T20:30:05 IST" name="Suite" finished-at="2023-04-28T21:03:30 IST" duration-ms="2005409">
     <groups>
     </groups>
-    <test started-at="2023-04-25T00:26:16 IST" name="Test" finished-at="2023-04-25T00:31:23 IST" duration-ms="307236">
+    <test started-at="2023-04-28T20:30:05 IST" name="Test" finished-at="2023-04-28T21:03:30 IST" duration-ms="2005409">
       <class name="Test_Package.Test_case_BrokenLinks">
-        <test-method signature="Test_href_Number_check(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:17 IST" name="Test_href_Number_check" description="To test the correct Image links Number" data-provider="Links" finished-at="2023-04-25T00:26:29 IST" duration-ms="12845" status="PASS">
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:30:07 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:31:11 IST" duration-ms="64166" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Home_Page]]>
+                <![CDATA[Home_Page_English]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://magicminds.io/]]>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/]]>
               </value>
             </param>
             <param index="2">
@@ -25,148 +25,79 @@
               </value>
             </param>
           </params>
+          <exception class="java.net.ConnectException">
+            <message>
+              <![CDATA[Connection timed out: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.ConnectException: Connection timed out: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:579)
+at java.base/sun.nio.ch.Net.connect(Net.java:568)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:266)
+at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+at Test_Package.Test_case_BrokenLinks.Test_link_Responce_check(Test_case_BrokenLinks.java:143)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.ConnectException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_href_Number_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:29 IST" name="teardown" finished-at="2023-04-25T00:26:30 IST" duration-ms="147" status="PASS">
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:31:11 IST" name="teardown" finished-at="2023-04-28T20:31:11 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="Test_href_Number_check(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:30 IST" name="Test_href_Number_check" description="To test the correct Image links Number" data-provider="Links" finished-at="2023-04-25T00:26:38 IST" duration-ms="7978" status="PASS">
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:31:11 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:31:53 IST" duration-ms="41465" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[About_Page]]>
+                <![CDATA[About_Page_English]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://magicminds.io/about-mmt/]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_href_Number_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:38 IST" name="teardown" finished-at="2023-04-25T00:26:38 IST" duration-ms="168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="Test_href_Number_check(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:38 IST" name="Test_href_Number_check" description="To test the correct Image links Number" data-provider="Links" finished-at="2023-04-25T00:26:45 IST" duration-ms="7408" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Offshore_Page]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://magicminds.io/offshore-delivery/]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_href_Number_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:45 IST" name="teardown" finished-at="2023-04-25T00:26:45 IST" duration-ms="175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="Test_href_Number_check(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:45 IST" name="Test_href_Number_check" description="To test the correct Image links Number" data-provider="Links" finished-at="2023-04-25T00:26:52 IST" duration-ms="6293" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SoftwareDevelopment_Page]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://magicminds.io/software-development/]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_href_Number_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:52 IST" name="teardown" finished-at="2023-04-25T00:26:52 IST" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="Test_href_Number_check(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:52 IST" name="Test_href_Number_check" description="To test the correct Image links Number" data-provider="Links" finished-at="2023-04-25T00:26:59 IST" duration-ms="7291" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[StaffAugmentation_Page]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://magicminds.io/staff-augmentation/]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_href_Number_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:59 IST" name="teardown" finished-at="2023-04-25T00:26:59 IST" duration-ms="182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="Test_href_Number_check(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:26:59 IST" name="Test_href_Number_check" description="To test the correct Image links Number" data-provider="Links" finished-at="2023-04-25T00:27:05 IST" duration-ms="6252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Contact_Page]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://magicminds.io/contact/]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_href_Number_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:27:05 IST" name="teardown" finished-at="2023-04-25T00:27:06 IST" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:27:06 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-25T00:28:25 IST" duration-ms="79092" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Home_Page]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://magicminds.io/]]>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/]]>
               </value>
             </param>
             <param index="2">
@@ -178,20 +109,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_link_Responce_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:28:25 IST" name="teardown" finished-at="2023-04-25T00:28:25 IST" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:31:53 IST" name="teardown" finished-at="2023-04-28T20:31:53 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:28:25 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-25T00:28:57 IST" duration-ms="32080" status="PASS">
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:31:53 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:32:37 IST" duration-ms="44475" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[About_Page]]>
+                <![CDATA[Our_Service_English]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://magicminds.io/about-mmt/]]>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/]]>
               </value>
             </param>
             <param index="2">
@@ -203,20 +134,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_link_Responce_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:28:57 IST" name="teardown" finished-at="2023-04-25T00:28:57 IST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:32:37 IST" name="teardown" finished-at="2023-04-28T20:32:38 IST" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:28:57 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-25T00:29:39 IST" duration-ms="41656" status="PASS">
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:32:38 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:33:18 IST" duration-ms="40516" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Offshore_Page]]>
+                <![CDATA[Accounting_English]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://magicminds.io/offshore-delivery/]]>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/]]>
               </value>
             </param>
             <param index="2">
@@ -228,20 +159,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_link_Responce_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:29:39 IST" name="teardown" finished-at="2023-04-25T00:29:39 IST" duration-ms="201" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:33:18 IST" name="teardown" finished-at="2023-04-28T20:33:18 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:29:39 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-25T00:30:15 IST" duration-ms="36289" status="PASS">
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:33:18 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:33:58 IST" duration-ms="39508" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[SoftwareDevelopment_Page]]>
+                <![CDATA[Book_Keeping_English]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://magicminds.io/software-development/]]>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/]]>
               </value>
             </param>
             <param index="2">
@@ -253,20 +184,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_link_Responce_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:30:15 IST" name="teardown" finished-at="2023-04-25T00:30:15 IST" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:33:58 IST" name="teardown" finished-at="2023-04-28T20:33:58 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:30:15 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-25T00:30:49 IST" duration-ms="34012" status="PASS">
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:33:58 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:34:38 IST" duration-ms="39505" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[StaffAugmentation_Page]]>
+                <![CDATA[Payroll_Services_English]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://magicminds.io/staff-augmentation/]]>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/]]>
               </value>
             </param>
             <param index="2">
@@ -278,20 +209,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_link_Responce_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:30:49 IST" name="teardown" finished-at="2023-04-25T00:30:50 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:34:38 IST" name="teardown" finished-at="2023-04-28T20:34:38 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:30:50 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-25T00:31:23 IST" duration-ms="33601" status="PASS">
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:34:38 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:35:16 IST" duration-ms="38227" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Contact_Page]]>
+                <![CDATA[Personal_Tax_English]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://magicminds.io/contact/]]>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/]]>
               </value>
             </param>
             <param index="2">
@@ -303,7 +234,1087 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_link_Responce_check -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-25T00:31:23 IST" name="teardown" finished-at="2023-04-25T00:31:23 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:35:16 IST" name="teardown" finished-at="2023-04-28T20:35:16 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:35:16 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:35:55 IST" duration-ms="39211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Corporate_Tax_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:35:55 IST" name="teardown" finished-at="2023-04-28T20:35:56 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:35:56 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:36:33 IST" duration-ms="36969" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tax_Representation_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:36:33 IST" name="teardown" finished-at="2023-04-28T20:36:33 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:36:33 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:37:10 IST" duration-ms="37319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Our_Values_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:37:10 IST" name="teardown" finished-at="2023-04-28T20:37:10 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:37:10 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:38:29 IST" duration-ms="78512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blog_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/blog/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:38:29 IST" name="teardown" finished-at="2023-04-28T20:38:29 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:38:29 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:39:10 IST" duration-ms="40656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact_Us_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:39:10 IST" name="teardown" finished-at="2023-04-28T20:39:10 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:39:10 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:39:55 IST" duration-ms="45851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Home_Page_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:39:55 IST" name="teardown" finished-at="2023-04-28T20:39:56 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:39:56 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:40:32 IST" duration-ms="36500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[About_Page_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:40:32 IST" name="teardown" finished-at="2023-04-28T20:40:32 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:40:32 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:41:17 IST" duration-ms="45218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Our_Service_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:41:17 IST" name="teardown" finished-at="2023-04-28T20:41:18 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:41:18 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:41:57 IST" duration-ms="39504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Accounting_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:41:57 IST" name="teardown" finished-at="2023-04-28T20:41:57 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:41:57 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:42:33 IST" duration-ms="35874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book_Keeping_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de-ventes/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:42:33 IST" name="teardown" finished-at="2023-04-28T20:42:33 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:42:33 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:43:09 IST" duration-ms="36009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Payroll_Services_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:43:10 IST" name="teardown" finished-at="2023-04-28T20:43:10 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:43:10 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:43:43 IST" duration-ms="33626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personal_Tax_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:43:43 IST" name="teardown" finished-at="2023-04-28T20:43:43 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:43:43 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:44:18 IST" duration-ms="34121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Corporate_Tax_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:44:18 IST" name="teardown" finished-at="2023-04-28T20:44:18 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:44:18 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:44:53 IST" duration-ms="35105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tax_Representation_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu-canada-et-revenu-quebec/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:44:53 IST" name="teardown" finished-at="2023-04-28T20:44:53 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:44:53 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:45:27 IST" duration-ms="33734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Our_Values_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:45:27 IST" name="teardown" finished-at="2023-04-28T20:45:27 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:45:27 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:46:41 IST" duration-ms="74139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blog_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:46:41 IST" name="teardown" finished-at="2023-04-28T20:46:41 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:46:41 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:47:16 IST" duration-ms="34801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact_Us_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:47:16 IST" name="teardown" finished-at="2023-04-28T20:47:16 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:47:16 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:48:10 IST" duration-ms="54237" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Home_Page_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.net.ConnectException">
+            <message>
+              <![CDATA[Connection timed out: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.ConnectException: Connection timed out: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:579)
+at java.base/sun.nio.ch.Net.connect(Net.java:568)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:266)
+at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+at Test_Package.Test_case_BrokenLinks.Test_link_Responce_check(Test_case_BrokenLinks.java:143)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.ConnectException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:48:10 IST" name="teardown" finished-at="2023-04-28T20:48:11 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:48:11 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:48:48 IST" duration-ms="36968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[About_Page_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:48:48 IST" name="teardown" finished-at="2023-04-28T20:48:48 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:48:48 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:49:29 IST" duration-ms="41009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Our_Service_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:49:29 IST" name="teardown" finished-at="2023-04-28T20:49:29 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:49:29 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:50:06 IST" duration-ms="36994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Accounting_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:50:06 IST" name="teardown" finished-at="2023-04-28T20:50:06 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:50:06 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:50:42 IST" duration-ms="36101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book_Keeping_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:50:42 IST" name="teardown" finished-at="2023-04-28T20:50:42 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:50:42 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:51:20 IST" duration-ms="37994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Payroll_Services_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:51:20 IST" name="teardown" finished-at="2023-04-28T20:51:20 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:51:20 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:51:58 IST" duration-ms="37883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personal_Tax_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:51:58 IST" name="teardown" finished-at="2023-04-28T20:51:59 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:51:59 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:52:39 IST" duration-ms="40124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Corporate_Tax_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:52:39 IST" name="teardown" finished-at="2023-04-28T20:52:39 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:52:39 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:53:16 IST" duration-ms="37495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tax_Representation_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:53:16 IST" name="teardown" finished-at="2023-04-28T20:53:17 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:53:17 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:53:53 IST" duration-ms="36910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Our_Values_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:53:53 IST" name="teardown" finished-at="2023-04-28T20:53:54 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:53:54 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:55:10 IST" duration-ms="76592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blog_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/blog/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:55:10 IST" name="teardown" finished-at="2023-04-28T20:55:10 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:55:10 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:55:47 IST" duration-ms="36788" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact_Us_English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:55:47 IST" name="teardown" finished-at="2023-04-28T20:55:47 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:55:47 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:56:31 IST" duration-ms="43747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Home_Page_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:56:31 IST" name="teardown" finished-at="2023-04-28T20:56:31 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:56:31 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:57:05 IST" duration-ms="33378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[About_Page_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:57:05 IST" name="teardown" finished-at="2023-04-28T20:57:05 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:57:05 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:57:43 IST" duration-ms="37612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Our_Service_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:57:43 IST" name="teardown" finished-at="2023-04-28T20:57:43 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:57:43 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:58:21 IST" duration-ms="38483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Accounting_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:58:21 IST" name="teardown" finished-at="2023-04-28T20:58:21 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:58:21 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:58:54 IST" duration-ms="32980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book_Keeping_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de-ventes/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:58:54 IST" name="teardown" finished-at="2023-04-28T20:58:55 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:58:55 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T20:59:28 IST" duration-ms="32886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Payroll_Services_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:59:28 IST" name="teardown" finished-at="2023-04-28T20:59:28 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T20:59:28 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T21:00:00 IST" duration-ms="32715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personal_Tax_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:00:00 IST" name="teardown" finished-at="2023-04-28T21:00:01 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:00:01 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T21:00:34 IST" duration-ms="33090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Corporate_Tax_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:00:34 IST" name="teardown" finished-at="2023-04-28T21:00:34 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:00:34 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T21:01:07 IST" duration-ms="33358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tax_Representation_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu-canada-et-revenu-quebec/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:01:07 IST" name="teardown" finished-at="2023-04-28T21:01:08 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:01:08 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T21:01:41 IST" duration-ms="33442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Our_Values_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:01:41 IST" name="teardown" finished-at="2023-04-28T21:01:41 IST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:01:41 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T21:02:57 IST" duration-ms="75765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blog_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:02:57 IST" name="teardown" finished-at="2023-04-28T21:02:57 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test_link_Responce_check(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:02:57 IST" name="Test_link_Responce_check" description="To test the correct links Number" data-provider="Links" finished-at="2023-04-28T21:03:30 IST" duration-ms="33126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact_Us_French]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_link_Responce_check -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.Test_case_BrokenLinks@4b45a2f5]" started-at="2023-04-28T21:03:30 IST" name="teardown" finished-at="2023-04-28T21:03:30 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

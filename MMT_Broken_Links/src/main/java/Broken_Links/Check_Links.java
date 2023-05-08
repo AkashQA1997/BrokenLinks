@@ -26,7 +26,7 @@ public class Check_Links {
 		driver.get("https://magicminds.io/");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 	List <WebElement> LinkList= driver.findElements(By.tagName("a"));
 	

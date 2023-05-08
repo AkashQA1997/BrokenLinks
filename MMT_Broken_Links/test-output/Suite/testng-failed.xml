@@ -5,11 +5,8 @@
     <classes>
       <class name="Test_Package.Test_case_BrokenLinks">
         <methods>
-          <include name="Test_Image_Number_check"/>
-          <include name="Test_link_Responce_check"/>
-          <include name="Test_link_Number_check"/>
+          <include name="Test_link_Responce_check" invocation-numbers="0 24"/>
           <include name="teardown"/>
-          <include name="Test_href_Number_check"/>
         </methods>
       </class> <!-- Test_Package.Test_case_BrokenLinks -->
     </classes>

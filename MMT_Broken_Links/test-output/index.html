@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">48 methods, 2 failed,   46 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Edge)">Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Chrome)">Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,62 +122,232 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_href_Number_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome)">Test_href_Number_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Edge)">Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_href_Number_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome)">Test_href_Number_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Chrome)">Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_href_Number_check(Contact_Page, https://magicminds.io/contact/, Chrome)">Test_href_Number_check(Contact_Page, https://magicminds.io/contact/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ch...)">Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ch...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_href_Number_check(Home_Page, https://magicminds.io/, Chrome)">Test_href_Number_check(Home_Page, https://magicminds.io/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Edge)">Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_href_Number_check(About_Page, https://magicminds.io/about-mmt/, Chrome)">Test_href_Number_check(About_Page, https://magicminds.io/about-mmt/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ed...)">Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ed...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_href_Number_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome)">Test_href_Number_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Edge)">Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome)">Test_link_Responce_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Chrome)">Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome)">Test_link_Responce_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Edge)">Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Contact_Page, https://magicminds.io/contact/, Chrome)">Test_link_Responce_check(Contact_Page, https://magicminds.io/contact/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Chrome)">Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome)">Test_link_Responce_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...)">Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Home_Page, https://magicminds.io/, Chrome)">Test_link_Responce_check(Home_Page, https://magicminds.io/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Chrome)">Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(About_Page, https://magicminds.io/about-mmt/, Chrome)">Test_link_Responce_check(About_Page, https://magicminds.io/about-mmt/, Chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Chrome)">Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Chrome)">Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Edge)">Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Chr...)">Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Chr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...)">Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...)">Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...)">Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Chrome)">Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Chrome)">Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Chrome)">Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Edge)">Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Chrome)">Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Edge)">Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Chrome)">Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...)">Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Edge)">Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Chrome)">Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Edg...)">Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Edg...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, C...)">Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, C...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Edge)">Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Edge)">Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...)">Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Chrome)">Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, E...)">Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, E...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Edge)">Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Edge)">Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Chrome)">Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Chrome)">Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Chrome)">Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Edge)">Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Edge)">Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Edge)">Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Edge)">Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Chrome)">Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Package.Test_case_BrokenLinks" class="method navigator-link" hash-for-method="Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Edge)">Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -173,6 +362,80 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test_Package.Test_case_BrokenLinks</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Home_Page_English,https://earthwp.magicmindtechnologies.com/mmt_wp/,Edge)</span>
+                  <div class="stack-trace">java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at Test_Package.Test_case_BrokenLinks.Test_link_Responce_check(Test_case_BrokenLinks.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Home_Page_English,https://earthwp.magicmindtechnologies.com/mmt_wp/,Chrome)</span>
+                  <div class="stack-trace">java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at Test_Package.Test_case_BrokenLinks.Test_link_Responce_check(Test_case_BrokenLinks.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -181,120 +444,460 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_href_Number_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome)">
-                  </a> <!-- Test_href_Number_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome) -->
-                  <span class="method-name">Test_href_Number_check</span>
-                  <span class="parameters">(Offshore_Page,https://magicminds.io/offshore-delivery/,Chrome)</span>
-                  <em>
-(To test the correct Image links Number)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test_href_Number_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome)">
-                  </a> <!-- Test_href_Number_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome) -->
-                  <span class="method-name">Test_href_Number_check</span>
-                  <span class="parameters">(SoftwareDevelopment_Page,https://magicminds.io/software-development/,Chrome)</span>
-                  <em>
-(To test the correct Image links Number)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test_href_Number_check(Contact_Page, https://magicminds.io/contact/, Chrome)">
-                  </a> <!-- Test_href_Number_check(Contact_Page, https://magicminds.io/contact/, Chrome) -->
-                  <span class="method-name">Test_href_Number_check</span>
-                  <span class="parameters">(Contact_Page,https://magicminds.io/contact/,Chrome)</span>
-                  <em>
-(To test the correct Image links Number)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test_href_Number_check(Home_Page, https://magicminds.io/, Chrome)">
-                  </a> <!-- Test_href_Number_check(Home_Page, https://magicminds.io/, Chrome) -->
-                  <span class="method-name">Test_href_Number_check</span>
-                  <span class="parameters">(Home_Page,https://magicminds.io/,Chrome)</span>
-                  <em>
-(To test the correct Image links Number)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test_href_Number_check(About_Page, https://magicminds.io/about-mmt/, Chrome)">
-                  </a> <!-- Test_href_Number_check(About_Page, https://magicminds.io/about-mmt/, Chrome) -->
-                  <span class="method-name">Test_href_Number_check</span>
-                  <span class="parameters">(About_Page,https://magicminds.io/about-mmt/,Chrome)</span>
-                  <em>
-(To test the correct Image links Number)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test_href_Number_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome)">
-                  </a> <!-- Test_href_Number_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome) -->
-                  <span class="method-name">Test_href_Number_check</span>
-                  <span class="parameters">(StaffAugmentation_Page,https://magicminds.io/staff-augmentation/,Chrome)</span>
-                  <em>
-(To test the correct Image links Number)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test_link_Responce_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome)">
-                  </a> <!-- Test_link_Responce_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome) -->
+                  <a name="Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Edge) -->
                   <span class="method-name">Test_link_Responce_check</span>
-                  <span class="parameters">(Offshore_Page,https://magicminds.io/offshore-delivery/,Chrome)</span>
+                  <span class="parameters">(Our_Service_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/,Edge)</span>
                   <em>
 (To test the correct links Number)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_link_Responce_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome)">
-                  </a> <!-- Test_link_Responce_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome) -->
+                  <a name="Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Chrome) -->
                   <span class="method-name">Test_link_Responce_check</span>
-                  <span class="parameters">(SoftwareDevelopment_Page,https://magicminds.io/software-development/,Chrome)</span>
+                  <span class="parameters">(Contact_Us_English,https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/,Chrome)</span>
                   <em>
 (To test the correct links Number)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_link_Responce_check(Contact_Page, https://magicminds.io/contact/, Chrome)">
-                  </a> <!-- Test_link_Responce_check(Contact_Page, https://magicminds.io/contact/, Chrome) -->
+                  <a name="Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ch...)">
+                  </a> <!-- Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ch...) -->
                   <span class="method-name">Test_link_Responce_check</span>
-                  <span class="parameters">(Contact_Page,https://magicminds.io/contact/,Chrome)</span>
+                  <span class="parameters">(Tax_Representation_English,https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/,Chrome)</span>
                   <em>
 (To test the correct links Number)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_link_Responce_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome)">
-                  </a> <!-- Test_link_Responce_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome) -->
+                  <a name="Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Edge) -->
                   <span class="method-name">Test_link_Responce_check</span>
-                  <span class="parameters">(StaffAugmentation_Page,https://magicminds.io/staff-augmentation/,Chrome)</span>
+                  <span class="parameters">(Accounting_English,https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/,Edge)</span>
                   <em>
 (To test the correct links Number)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_link_Responce_check(Home_Page, https://magicminds.io/, Chrome)">
-                  </a> <!-- Test_link_Responce_check(Home_Page, https://magicminds.io/, Chrome) -->
+                  <a name="Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ed...)">
+                  </a> <!-- Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ed...) -->
                   <span class="method-name">Test_link_Responce_check</span>
-                  <span class="parameters">(Home_Page,https://magicminds.io/,Chrome)</span>
+                  <span class="parameters">(Tax_Representation_English,https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/,Edge)</span>
                   <em>
 (To test the correct links Number)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_link_Responce_check(About_Page, https://magicminds.io/about-mmt/, Chrome)">
-                  </a> <!-- Test_link_Responce_check(About_Page, https://magicminds.io/about-mmt/, Chrome) -->
+                  <a name="Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Edge) -->
                   <span class="method-name">Test_link_Responce_check</span>
-                  <span class="parameters">(About_Page,https://magicminds.io/about-mmt/,Chrome)</span>
+                  <span class="parameters">(Our_Service_English,https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Home_Page_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Contact_Us_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Blog_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...)">
+                  </a> <!-- Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Tax_Representation_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu-canada-et-revenu-quebec/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Blog_English,https://earthwp.magicmindtechnologies.com/mmt_wp/blog/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Contact_Us_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Our_Service_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Corporate_Tax_English,https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Chr...)">
+                  </a> <!-- Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Chr...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Payroll_Services_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...)">
+                  </a> <!-- Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Personal_Tax_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...)">
+                  </a> <!-- Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Book_Keeping_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de-ventes/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...)">
+                  </a> <!-- Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Tax_Representation_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu-canada-et-revenu-quebec/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Our_Service_English,https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Personal_Tax_English,https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Accounting_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Accounting_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Our_Values_English,https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Blog_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Payroll_Services_English,https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...)">
+                  </a> <!-- Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Book_Keeping_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de-ventes/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Payroll_Services_English,https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Accounting_English,https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Edg...)">
+                  </a> <!-- Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Edg...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Payroll_Services_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, C...)">
+                  </a> <!-- Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, C...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Corporate_Tax_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Home_Page_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Blog_English,https://earthwp.magicmindtechnologies.com/mmt_wp/blog/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...)">
+                  </a> <!-- Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Personal_Tax_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Book_Keeping_English,https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, E...)">
+                  </a> <!-- Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, E...) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Corporate_Tax_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Our_Values_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Contact_Us_English,https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(About_Page_English,https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Corporate_Tax_English,https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(About_Page_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Book_Keeping_English,https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Edge)">
+                  </a> <!-- Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(About_Page_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Edge)">
+                  </a> <!-- Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(About_Page_English,https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Personal_Tax_English,https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/,Edge)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Chrome)">
+                  </a> <!-- Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Chrome) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Our_Values_French,https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/,Chrome)</span>
+                  <em>
+(To test the correct links Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Edge)">
+                  </a> <!-- Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Edge) -->
+                  <span class="method-name">Test_link_Responce_check</span>
+                  <span class="parameters">(Our_Values_English,https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/,Edge)</span>
                   <em>
 (To test the correct links Number)                  </em>
                 </div> <!-- method-content -->
@@ -315,7 +918,6 @@
     &lt;classes&gt;
       &lt;class name=&quot;Test_Package.Test_case_BrokenLinks&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Test_href_Number_check&quot;/&gt;
           &lt;include name=&quot;Test_link_Responce_check&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Test_Package.Test_case_BrokenLinks --&gt;
@@ -358,60 +960,204 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(48);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Test_link_Responce_check')
 data.setCell(0, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(0, 3, 79092);
+data.setCell(0, 3, 78512);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Test_link_Responce_check')
 data.setCell(1, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(1, 3, 41656);
+data.setCell(1, 3, 76592);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Test_link_Responce_check')
 data.setCell(2, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(2, 3, 36289);
+data.setCell(2, 3, 75765);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Test_link_Responce_check')
 data.setCell(3, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(3, 3, 34012);
+data.setCell(3, 3, 74139);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Test_link_Responce_check')
 data.setCell(4, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(4, 3, 33601);
+data.setCell(4, 3, 64166);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'Test_link_Responce_check')
 data.setCell(5, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(5, 3, 32080);
+data.setCell(5, 3, 54237);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Test_href_Number_check')
+data.setCell(6, 1, 'Test_link_Responce_check')
 data.setCell(6, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(6, 3, 12845);
+data.setCell(6, 3, 45851);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Test_href_Number_check')
+data.setCell(7, 1, 'Test_link_Responce_check')
 data.setCell(7, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(7, 3, 7978);
+data.setCell(7, 3, 45218);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Test_href_Number_check')
+data.setCell(8, 1, 'Test_link_Responce_check')
 data.setCell(8, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(8, 3, 7408);
+data.setCell(8, 3, 44475);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Test_href_Number_check')
+data.setCell(9, 1, 'Test_link_Responce_check')
 data.setCell(9, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(9, 3, 7291);
+data.setCell(9, 3, 43747);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Test_href_Number_check')
+data.setCell(10, 1, 'Test_link_Responce_check')
 data.setCell(10, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(10, 3, 6293);
+data.setCell(10, 3, 41465);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Test_href_Number_check')
+data.setCell(11, 1, 'Test_link_Responce_check')
 data.setCell(11, 2, 'Test_Package.Test_case_BrokenLinks')
-data.setCell(11, 3, 6252);
+data.setCell(11, 3, 41009);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Test_link_Responce_check')
+data.setCell(12, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(12, 3, 40656);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Test_link_Responce_check')
+data.setCell(13, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(13, 3, 40516);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Test_link_Responce_check')
+data.setCell(14, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(14, 3, 40124);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Test_link_Responce_check')
+data.setCell(15, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(15, 3, 39508);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Test_link_Responce_check')
+data.setCell(16, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(16, 3, 39505);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Test_link_Responce_check')
+data.setCell(17, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(17, 3, 39504);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Test_link_Responce_check')
+data.setCell(18, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(18, 3, 39211);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Test_link_Responce_check')
+data.setCell(19, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(19, 3, 38483);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Test_link_Responce_check')
+data.setCell(20, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(20, 3, 38227);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Test_link_Responce_check')
+data.setCell(21, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(21, 3, 37994);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Test_link_Responce_check')
+data.setCell(22, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(22, 3, 37883);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Test_link_Responce_check')
+data.setCell(23, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(23, 3, 37612);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Test_link_Responce_check')
+data.setCell(24, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(24, 3, 37495);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'Test_link_Responce_check')
+data.setCell(25, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(25, 3, 37319);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'Test_link_Responce_check')
+data.setCell(26, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(26, 3, 36994);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'Test_link_Responce_check')
+data.setCell(27, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(27, 3, 36969);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'Test_link_Responce_check')
+data.setCell(28, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(28, 3, 36968);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'Test_link_Responce_check')
+data.setCell(29, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(29, 3, 36910);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Test_link_Responce_check')
+data.setCell(30, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(30, 3, 36788);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Test_link_Responce_check')
+data.setCell(31, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(31, 3, 36500);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'Test_link_Responce_check')
+data.setCell(32, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(32, 3, 36101);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'Test_link_Responce_check')
+data.setCell(33, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(33, 3, 36009);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Test_link_Responce_check')
+data.setCell(34, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(34, 3, 35874);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'Test_link_Responce_check')
+data.setCell(35, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(35, 3, 35105);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'Test_link_Responce_check')
+data.setCell(36, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(36, 3, 34801);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'Test_link_Responce_check')
+data.setCell(37, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(37, 3, 34121);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'Test_link_Responce_check')
+data.setCell(38, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(38, 3, 33734);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'Test_link_Responce_check')
+data.setCell(39, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(39, 3, 33626);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'Test_link_Responce_check')
+data.setCell(40, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(40, 3, 33442);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'Test_link_Responce_check')
+data.setCell(41, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(41, 3, 33378);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'Test_link_Responce_check')
+data.setCell(42, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(42, 3, 33358);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'Test_link_Responce_check')
+data.setCell(43, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(43, 3, 33126);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'Test_link_Responce_check')
+data.setCell(44, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(44, 3, 33090);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'Test_link_Responce_check')
+data.setCell(45, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(45, 3, 32980);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'Test_link_Responce_check')
+data.setCell(46, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(46, 3, 32886);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'Test_link_Responce_check')
+data.setCell(47, 2, 'Test_Package.Test_case_BrokenLinks')
+data.setCell(47, 3, 32715);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 33 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -426,12 +1172,14 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Test_Package.Test_case_BrokenLinks</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">Test_href_Number_check</span>
+                <br/>
                 <span class="ignored-method-name">Test_link_Number_check</span>
                 <br/>
                 <span class="ignored-method-name">Test_Image_Number_check</span>
@@ -448,100 +1196,392 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Test_Package.Test_case_BrokenLinks</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Test_href_Number_check(Home_Page, https://magicminds.io/, Chrome)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">12855 ms</span>
+                <span class="method-start">64174 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_href_Number_check(About_Page, https://magicminds.io/about-mmt/, Chrome)</span>
-                <span class="method-start">13006 ms</span>
+                <span class="method-name">Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Chrome)</span>
+                <span class="method-start">64467 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">20987 ms</span>
+                <span class="method-start">105935 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_href_Number_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome)</span>
-                <span class="method-start">21156 ms</span>
+                <span class="method-name">Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Chrome)</span>
+                <span class="method-start">106206 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">28566 ms</span>
+                <span class="method-start">150684 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_href_Number_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome)</span>
-                <span class="method-start">28742 ms</span>
+                <span class="method-name">Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Chrome)</span>
+                <span class="method-start">150853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">35035 ms</span>
+                <span class="method-start">191370 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_href_Number_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome)</span>
-                <span class="method-start">35180 ms</span>
+                <span class="method-name">Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Chrome)</span>
+                <span class="method-start">191582 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">42472 ms</span>
+                <span class="method-start">231091 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_href_Number_check(Contact_Page, https://magicminds.io/contact/, Chrome)</span>
-                <span class="method-start">42654 ms</span>
+                <span class="method-name">Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Chrome)</span>
+                <span class="method-start">231264 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">48908 ms</span>
+                <span class="method-start">270770 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_link_Responce_check(Home_Page, https://magicminds.io/, Chrome)</span>
-                <span class="method-start">49134 ms</span>
+                <span class="method-name">Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Chrome)</span>
+                <span class="method-start">270929 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">128228 ms</span>
+                <span class="method-start">309157 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_link_Responce_check(About_Page, https://magicminds.io/about-mmt/, Chrome)</span>
-                <span class="method-start">128401 ms</span>
+                <span class="method-name">Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Chrome)</span>
+                <span class="method-start">309351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">160484 ms</span>
+                <span class="method-start">348564 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_link_Responce_check(Offshore_Page, https://magicminds.io/offshore-delivery/, Chrome)</span>
-                <span class="method-start">160590 ms</span>
+                <span class="method-name">Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ch...)</span>
+                <span class="method-start">348751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">202261 ms</span>
+                <span class="method-start">385722 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_link_Responce_check(SoftwareDevelopment_Page, https://magicminds.io/software-development/, Chrome)</span>
-                <span class="method-start">202462 ms</span>
+                <span class="method-name">Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Chrome)</span>
+                <span class="method-start">385916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">238753 ms</span>
+                <span class="method-start">423239 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_link_Responce_check(StaffAugmentation_Page, https://magicminds.io/staff-augmentation/, Chrome)</span>
-                <span class="method-start">238816 ms</span>
+                <span class="method-name">Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Chrome)</span>
+                <span class="method-start">423417 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">272830 ms</span>
+                <span class="method-start">501930 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Test_link_Responce_check(Contact_Page, https://magicminds.io/contact/, Chrome)</span>
-                <span class="method-start">272925 ms</span>
+                <span class="method-name">Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Chrome)</span>
+                <span class="method-start">502053 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">306530 ms</span>
+                <span class="method-start">542713 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Chrome)</span>
+                <span class="method-start">542829 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">588680 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Chrome)</span>
+                <span class="method-start">588836 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">625336 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Chrome)</span>
+                <span class="method-start">625475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">670694 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Chrome)</span>
+                <span class="method-start">670927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">710432 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...)</span>
+                <span class="method-start">710619 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">746494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Chr...)</span>
+                <span class="method-start">746694 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">782704 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...)</span>
+                <span class="method-start">782918 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">816545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, C...)</span>
+                <span class="method-start">816660 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">850782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...)</span>
+                <span class="method-start">850881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">885987 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Chrome)</span>
+                <span class="method-start">886181 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">919917 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Chrome)</span>
+                <span class="method-start">920048 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">994189 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Chrome)</span>
+                <span class="method-start">994316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1029120 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_link_Responce_check(Home_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/, Edge)</span>
+                <span class="method-start">1029244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1083482 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(About_Page_English, https://earthwp.magicmindtechnologies.com/mmt_wp/about-us/, Edge)</span>
+                <span class="method-start">1083740 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1120711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Our_Service_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-services/, Edge)</span>
+                <span class="method-start">1120878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1161887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Accounting_English, https://earthwp.magicmindtechnologies.com/mmt_wp/accounting/, Edge)</span>
+                <span class="method-start">1162047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1199041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Book_Keeping_English, https://earthwp.magicmindtechnologies.com/mmt_wp/bookkeeping/, Edge)</span>
+                <span class="method-start">1199217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1235319 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Payroll_Services_English, https://earthwp.magicmindtechnologies.com/mmt_wp/payroll-services/, Edge)</span>
+                <span class="method-start">1235463 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1273458 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Personal_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/personal-tax/, Edge)</span>
+                <span class="method-start">1273659 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1311544 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Corporate_Tax_English, https://earthwp.magicmindtechnologies.com/mmt_wp/corporate-tax/, Edge)</span>
+                <span class="method-start">1311711 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1351836 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Tax_Representation_English, https://earthwp.magicmindtechnologies.com/mmt_wp/tax-representation/, Ed...)</span>
+                <span class="method-start">1352008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1389504 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Our_Values_English, https://earthwp.magicmindtechnologies.com/mmt_wp/our-values/, Edge)</span>
+                <span class="method-start">1389789 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1426701 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Blog_English, https://earthwp.magicmindtechnologies.com/mmt_wp/blog/, Edge)</span>
+                <span class="method-start">1426866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1503459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Contact_Us_English, https://earthwp.magicmindtechnologies.com/mmt_wp/contact-us/, Edge)</span>
+                <span class="method-start">1503633 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1540422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Home_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/, Edge)</span>
+                <span class="method-start">1540617 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1584366 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(About_Page_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/a-propos/, Edge)</span>
+                <span class="method-start">1584549 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1617928 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Our_Service_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/services/, Edge)</span>
+                <span class="method-start">1618193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1655807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Accounting_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/comptabilite/, Edge)</span>
+                <span class="method-start">1655958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1694443 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Book_Keeping_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/tenue-de-livres-et-taxes-de...)</span>
+                <span class="method-start">1694664 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1727646 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Payroll_Services_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/support-a-la-paie/, Edg...)</span>
+                <span class="method-start">1727820 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1760708 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Personal_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/fiscalite-des-particuliers/...)</span>
+                <span class="method-start">1760984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1793700 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Corporate_Tax_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/impot-sur-les-societes/, E...)</span>
+                <span class="method-start">1793890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1826982 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Tax_Representation_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/representation-revenu...)</span>
+                <span class="method-start">1827195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1860555 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Our_Values_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nos-valeurs/, Edge)</span>
+                <span class="method-start">1860765 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1894208 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Blog_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/blog/, Edge)</span>
+                <span class="method-start">1894363 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1970129 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Test_link_Responce_check(Contact_Us_French, https://earthwp.magicmindtechnologies.com/mmt_wp/fr/nous-contacter/, Edge)</span>
+                <span class="method-start">1970306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">2003433 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
